@@ -1,0 +1,19 @@
+modules:
+  jira:issuePanel:
+    - key: innovators-jira-copilot-hack-ai
+      function: main
+      title: Jira Copilot
+      icon: https://i.ibb.co/x28swfV/Designer-1.png
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/453c4cab-9978-438f-a004-056e92260090
+permissions:
+  scopes:
+    - read:jira-work
+    - write:jira-work
+  external:
+    fetch:
+      backend:
+        - https://hackai.mamavanja.com
